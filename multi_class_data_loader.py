@@ -71,7 +71,7 @@ class MultiClassDataLoader(object):
             class_vectors = {}
             for i, cls in enumerate(classes):
                 class_vectors[cls] = one_hot_vectors[i]
-            tsvin = csv.reader(tsvin, delimiter=',')
+            tsvin = csv.reader(tsvin, delimiter='\t')
             for row in tsvin:
                 data = self.__data_processor.clean_data(row[0])
                 x_text.append(data)
