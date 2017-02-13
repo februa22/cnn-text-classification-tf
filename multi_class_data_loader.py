@@ -20,9 +20,9 @@ class MultiClassDataLoader(object):
 
 
     def define_flags(self):
-        self.__flags.DEFINE_string("train_data_file", "./data/kkk.train", "Data source for the training data.")
-        self.__flags.DEFINE_string("dev_data_file", "./data/kkk.dev", "Data source for the cross validation data.")
-        self.__flags.DEFINE_string("class_data_file", "./data/kkk.cls", "Data source for the class list.")
+        self.__flags.DEFINE_string("train_data_file", "./data/cnn4nlu.train", "Data source for the training data.")
+        self.__flags.DEFINE_string("dev_data_file", "./data/cnn4nlu.dev", "Data source for the cross validation data.")
+        self.__flags.DEFINE_string("class_data_file", "./data/cnn4nlu.cls", "Data source for the class list.")
 
     def prepare_data(self):
         self.__resolve_params()
